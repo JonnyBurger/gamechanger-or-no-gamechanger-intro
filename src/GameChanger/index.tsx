@@ -1,6 +1,6 @@
 import {lighten} from 'polished';
 import React, {useMemo} from 'react';
-import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Img, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import styled from 'styled-components';
 
 const image = require('./gamechangerbig.png');
@@ -133,7 +133,7 @@ const GameChanger: React.FC = () => {
 				/>
 			</svg>
 			<div style={circleStyle}>
-				<img src={image} style={imageStyle} />
+				<Img src={image} style={imageStyle} />
 			</div>
 			<Title
 				style={{
